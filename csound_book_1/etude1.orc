@@ -28,7 +28,11 @@ a1  grain   10000, 440, 55, 10000, 10, .05, 1, 3, 1
     out     a1
     endin
 
-    instr    106 ; Simple Wavetable
-a1  loscil  10000, 440, 4
+;ar1 [,ar2] loscil xamp, kcps, ifn [, ibas] [, imod1] [, ibeg1] [, iend1] \
+;      [, imod2] [, ibeg2] [, iend2]
+; http://www.csounds.com/manual/html/loscil.html
+; http://www.csounds.com/manual/html/GEN01.html
+    instr   106 ; Simple Wavetable
+a1  loscil  10000, 440, 4, 440 ; amp freq, function (GEN1) in score; base freq
     out     a1
     endin
