@@ -16,11 +16,13 @@ f 1 0 4096 10 1 ; A Sine wave
 f 2 0 4096 10 1 .5 .333 .25 .2 .166 .142 .125 .111 .1 .09 .083 .076 .071 .066 .062 ; sawtooth
 f 3 0 4096 20 2 1 ; grain
 f 4  0 0    1   "sing.aif" 0 4 0 ; generate a sample wavetable
+f 5 0 8192 10 1 0 .333 0 .2 0 .142 0 .111 0 .09 0 .076 0 .066 0 ; buzz  - quase square
 
-;inst   start   duration
+; inst   start   duration
 i 101       0       3
 i 102       2       3
 i 103       4       3
 i 104       6      3
 i 105       8      3
 i 106       10      2.3
+i 103 0 5
